@@ -60,6 +60,10 @@ typedef void (^RBLPopoverDelegateBlock)(RBLPopover *popover);
 // be an instance of the popover's `backgroundViewClass`.
 @property (nonatomic, readonly, strong) RBLPopoverBackgroundView *backgroundView;
 
+// The popover's background color
+// This will set the fillColor of RBLPopoverBackgroundView
+@property (nonatomic, strong) NSColor *backgroundColor;
+
 // The size that, when displayed, the popover's content should be.
 // Passing `CGSizeZero` uses the size of the `contentViewController`'s view.
 @property (nonatomic) CGSize contentSize;
