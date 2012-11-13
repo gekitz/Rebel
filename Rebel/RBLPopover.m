@@ -258,9 +258,9 @@
 	
 	self.backgroundView = [self.backgroundViewClass backgroundViewForContentSize:contentViewSize popoverEdge:popoverEdge originScreenRect:screenPositioningRect];
 
-    if (self.backgroundColor) {
-        self.backgroundView.fillColor = self.backgroundColor;
-    }
+	if (self.backgroundColor != nil) {
+		self.backgroundView.fillColor = self.backgroundColor;
+	}
 	
 	CGRect contentViewFrame = [self.backgroundViewClass contentViewFrameForBackgroundFrame:self.backgroundView.bounds popoverEdge:popoverEdge];
 	self.contentViewController.view.autoresizingMask = (NSViewWidthSizable | NSViewHeightSizable);
